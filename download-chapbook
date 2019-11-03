@@ -1,0 +1,11 @@
+#!/bin/bash
+story_formats_dir="./story-formats"
+mkdir -p "$story_formats_dir"
+
+chapbook_path="./$story_formats_dir/chapbook/format.js"
+
+if [ -f "$chapbook_path" ]; then
+  rm -f "$chapbook_path"
+fi
+
+wget "https://klembot.github.io/chapbook/use/$1/format.js" -P "./$story_formats_dir/chapbook"

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url(fonts/Alegreya-Regular.woff2) format('woff2'),
+    url(fonts/Alegreya-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url(fonts/Alegreya-Bold.woff2) format('woff2'),
+    url(fonts/Alegreya-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: AlegreyaSans;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url(fonts/AlegreyaSans-Regular.woff2) format('woff2'),
+    url(fonts/AlegreyaSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: AlegreyaSans;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url(fonts/AlegreyaSans-Bold.woff2) format('woff2'),
+    url(fonts/AlegreyaSans-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: AlegreyaSans;
+  font-style: italic;
+  font-weight: 400;
+  src:
+    url(fonts/AlegreyaSans-Italic.woff2) format('woff2'),
+    url(fonts/AlegreyaSans-Italic.woff) format('woff');
+}
+
+article {
+  font-size: 1.5rem;
+}

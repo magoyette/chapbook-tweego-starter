@@ -1,0 +1,32 @@
+:: StoryTitle
+An example story
+
+:: StoryData
+{
+  "ifid": "5AA821D0-AE83-4576-9B3D-C06B92984949",
+  "format": "Chapbook"
+}
+
+:: Start
+config.style.page.font: "AlegreyaSans/sans-serif"
+config.style.header.font: "AlegreyaSans/sans-serif"
+--
+
+[align center]
+
+# An example story
+
+**Written by Marc-André Goyette**
+
+[[Go to end->End]]
+
+:: End
+config.header.center: 'A top center header'
+--
+
+This is the end of the example. The layout has been adapted to have the text aligned at the top instead of the center.
+
+[CSS]
+#page article {
+  align-items: flex-start;
+}

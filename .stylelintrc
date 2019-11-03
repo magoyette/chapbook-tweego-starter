@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-recommended",
+  "plugins": [
+    "stylelint-no-unsupported-browser-features"
+  ],
+  "rules": {
+    "plugin/no-unsupported-browser-features": [true, {
+      "severity": "warning",
+      "browsers": ["defaults", "iOS > 9", "IE 11"],
+      "ignore": ["rem"]
+    }],
+    "no-empty-source": null
+  }
+}
