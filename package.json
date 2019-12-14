@@ -1,6 +1,6 @@
 {
   "name": "chapbook-tweego-starter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Twine/Twee starter project to use the Chapbook story format with Tweego compiler.",
   "author": {
     "name": "Marc-André Goyette",
@@ -19,13 +19,14 @@
   "main": "index.js",
   "config": {
     "chapbookVersion": "1.0.0",
-    "tweegoVersion": "2.0.0"
+    "tweegoVersion": "2.0.0",
+    "poofVersion": "1.5.0"
   },
   "scripts": {
     "download": "npm run download:tweego && npm run download:chapbook && npm run download:poof",
     "download:tweego": "./download-tweego $npm_package_config_tweegoVersion",
     "download:chapbook": "./download-chapbook $npm_package_config_chapbookVersion",
-    "download:poof": "./download-poof",
+    "download:poof": "./download-poof $npm_package_config_poofVersion",
     "build": "npm run build:webpack && npm run build:chapbook",
     "build:webpack": "rm -drf dist && npx webpack",
     "watch:webpack": "rm -drf dist && npx webpack --watch",

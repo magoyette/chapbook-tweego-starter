@@ -8,4 +8,4 @@ if [ -f "$poof_path" ]; then
   rm -f "$poof_path"
 fi
 
-wget "https://cdn.jsdelivr.net/gh/chapelr/poof@latest/docs/use/format.js" -P "./$story_formats_dir/poof"
+wget "https://cdn.jsdelivr.net/gh/chapelr/poof@v$1/docs/use/format.js" -P "./$story_formats_dir/poof"
