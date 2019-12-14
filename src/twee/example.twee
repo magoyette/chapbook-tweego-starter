@@ -8,9 +8,6 @@ An example story
 }
 
 :: Start
-config.style.page.font: "AlegreyaSans/sans-serif"
-config.style.header.font: "AlegreyaSans/sans-serif"
---
 
 [align center]
 

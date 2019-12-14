@@ -1,6 +1,6 @@
 {
   "name": "chapbook-tweego-starter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A Twine/Twee starter project to use the Chapbook story format with Tweego compiler.",
   "author": {
     "name": "Marc-André Goyette",
@@ -18,25 +18,27 @@
   },
   "main": "index.js",
   "config": {
+    "storyPath": "src",
     "chapbookVersion": "1.0.0",
     "tweegoVersion": "2.0.0",
     "poofVersion": "1.5.0"
   },
   "scripts": {
+    "switch": "./switch-story",
     "download": "npm run download:tweego && npm run download:chapbook && npm run download:poof",
     "download:tweego": "./download-tweego $npm_package_config_tweegoVersion",
     "download:chapbook": "./download-chapbook $npm_package_config_chapbookVersion",
     "download:poof": "./download-poof $npm_package_config_poofVersion",
     "build": "npm run build:webpack && npm run build:chapbook",
-    "build:webpack": "rm -drf dist && npx webpack",
-    "watch:webpack": "rm -drf dist && npx webpack --watch",
-    "build:chapbook": "./tweego/tweego --format=chapbook --output=./dist/chapbook/index.html ./src/twee ./dist/chapbook/scripts.bundle.js ./dist/chapbook/styles.bundle.css",
-    "watch:chapbook": "./tweego/tweego -w --format=chapbook --output=./dist/chapbook/index.html ./src/twee ./dist/chapbook/scripts.bundle.js ./dist/chapbook/styles.bundle.css",
+    "build:webpack": "rm -drf dist && npx webpack --env.storyPath=$npm_package_config_storyPath",
+    "watch:webpack": "rm -drf dist && npx webpack --env.storyPath=$npm_package_config_storyPath --watch",
+    "build:chapbook": "./tweego/tweego --format=chapbook --output=./dist/chapbook/index.html ./$npm_package_config_storyPath/twee ./dist/chapbook/scripts.bundle.js ./dist/chapbook/styles.bundle.css",
+    "watch:chapbook": "./tweego/tweego -w --format=chapbook --output=./dist/chapbook/index.html ./$npm_package_config_storyPath/twee ./dist/chapbook/scripts.bundle.js ./dist/chapbook/styles.bundle.css",
     "start": "npm run start:chapbook",
     "start:chapbook": "live-server ./dist/chapbook",
     "poof": "npm run build:webpack && npm run build:poof",
-    "build:poof": "mkdir -p dist/poof && ./tweego/tweego --format=poof --output=./dist/poof/index.html ./src/twee",
-    "watch:poof": "mkdir -p dist/poof && ./tweego/tweego -w --format=poof --output=./dist/poof/index.html ./src/twee",
+    "build:poof": "mkdir -p dist/poof && ./tweego/tweego --format=poof --output=./dist/poof/index.html ./$npm_package_config_storyPath/twee",
+    "watch:poof": "mkdir -p dist/poof && ./tweego/tweego -w --format=poof --output=./dist/poof/index.html ./$npm_package_config_storyPath/twee",
     "start:poof": "live-server ./dist/poof"
   },
   "browserslist": "defaults, iOS > 9, IE 11",
