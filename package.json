@@ -1,6 +1,6 @@
 {
   "name": "chapbook-tweego-starter",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A Twine/Twee starter project to use the Chapbook story format with Tweego compiler.",
   "author": {
     "name": "Marc-André Goyette",
@@ -20,7 +20,7 @@
   "config": {
     "storyPath": "src",
     "chapbookVersion": "1.0.0",
-    "tweegoVersion": "2.0.0",
+    "tweegoVersion": "2.1.0",
     "poofVersion": "1.5.0"
   },
   "scripts": {
