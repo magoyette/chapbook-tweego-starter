@@ -120,7 +120,7 @@ That's useful if you want to store each story in a distinct Git repository, but 
 
 Here's an example of a structure with many stories:
 
-- stories (folder ignored by the Git repository of chapbook-tweego-starter)
+- stories (folder ignored by the Git repository of chapbook-tweego-builder)
   - story1 (the Git repository of a story)
     - scripts
     - styles
@@ -129,15 +129,15 @@ Here's an example of a structure with many stories:
     - scripts
     - styles
     - twee
-- src (default story provided with chapbook-tweego-starter)
+- src (default story provided with chapbook-tweego-builder)
 
-The `stories` folder is configured to be ignored by the Git repository of chapbook-tweego-starter. The stories can be stored under `stories` each in their own repository.
+The `stories` folder is configured to be ignored by the Git repository of chapbook-tweego-builder. The stories can be stored under `stories` each in their own repository.
 
 The `src` folder is used by default by Chapbook Tweego Builder. That example story is used for the purpose of testing Chapbook Tweego Builder.
 
 ### Switching between stories
 
-The `switch` goal allows to configure which story should be built with chapbook-tweego-starter. Only one story can be built at a time.
+The `switch` goal allows to configure which story should be built with chapbook-tweego-builder. Only one story can be built at a time.
 
 The argument passed to `npm run switch` is the path to the root folder of the story. That path must contains 3 subfolders: `scripts`, `styles` and `twee`.
 
@@ -152,7 +152,7 @@ npm run switch stories/story2
 npm run build
 ```
 
-That goal will set a NPM config variable named `chapbook-tweego-starter:storyPath` in the file `~/.npmrc`. That will override the variable `storyPath` in the `config` object of `package.json`. `storyPath` is set by default to `src`, which is the example story of Chapbook Tweego Builder.
+That goal will set a NPM config variable named `chapbook-tweego-builder:storyPath` in the file `~/.npmrc`. That will override the variable `storyPath` in the `config` object of `package.json`. `storyPath` is set by default to `src`, which is the example story of Chapbook Tweego Builder.
 
 ## Tools
 

@@ -31,4 +31,4 @@ if [ ! -d "./$path/twee" ]; then
     exit 1
 fi
 
-npm config set chapbook-tweego-starter:storyPath "$path"
+npm config set chapbook-tweego-builder:storyPath "$path"
