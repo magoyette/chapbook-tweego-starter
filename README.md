@@ -1,6 +1,6 @@
-# Chapbook Tweego Starter
+# Chapbook Tweego Builder
 
-A starter project for the [Chapbook](https://github.com/klembot/chapbook) Twine story format Chapbook. It uses the compiler [Tweego](https://www.motoslave.net/tweego/).
+A project for the [Chapbook](https://github.com/klembot/chapbook) Twine/Twee story format Chapbook. It uses the compiler [Tweego](https://www.motoslave.net/tweego/) to build stories.
 
 **Features**
 
@@ -14,7 +14,13 @@ A starter project for the [Chapbook](https://github.com/klembot/chapbook) Twine 
 
 **Warning**
 
-This project is a work in progress and has only been tested on Linux.
+This project is a work in progress and has only been tested on Linux. If you're not familiar with Node and Webpack, it might be better to take a look at [tweego-installer](https://github.com/ChapelR/tweego-installer) and [tweego-setup](https://github.com/ChapelR/tweego-setup).
+
+**FAQ**
+
+Is there a reason why this project is specific to the Chapbook story format?
+
+I only write Twine/Twee stories with Chapbook, so this project is only tested with Chapbook.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -106,7 +112,7 @@ npm run start:poof
 
 ## Working with multiple stories
 
-Multiple stories support allows to use Chapbook Tweego Starter to build multiple stories.
+Multiple stories support allows to use Chapbook Tweego Builder to build multiple stories.
 
 That's useful if you want to store each story in a distinct Git repository, but keep using a single Node project to build them.
 
@@ -125,7 +131,7 @@ Here's an example of a structure with many stories:
 
 The `stories` folder is configured to be ignored by the Git repository of chapbook-tweego-starter. The stories can be stored under `stories` each in their own repository.
 
-The `src` folder is used by default by Chapbook Tweego Starter. That example story is used for the purpose of testing Chapbook Tweego Starter.
+The `src` folder is used by default by Chapbook Tweego Builder. That example story is used for the purpose of testing Chapbook Tweego Builder.
 
 ### Switching between stories
 
@@ -144,7 +150,7 @@ npm run switch stories/story2
 npm run build
 ```
 
-That goal will set a NPM config variable named `chapbook-tweego-starter:storyPath` in the file `~/.npmrc`. That will override the variable `storyPath` in the `config` object of `package.json`. `storyPath` is set by default to `src`, which is the example story of Chapbook Tweego Starter.
+That goal will set a NPM config variable named `chapbook-tweego-starter:storyPath` in the file `~/.npmrc`. That will override the variable `storyPath` in the `config` object of `package.json`. `storyPath` is set by default to `src`, which is the example story of Chapbook Tweego Builder.
 
 ## Tools
 
