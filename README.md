@@ -22,7 +22,7 @@ Is there a reason why this project is specific to the Chapbook story format?
 
 I only write Twine/Twee stories with Chapbook, so this project is only tested with Chapbook.
 
-**Table of contents*
+**Table of contents**
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
