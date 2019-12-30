@@ -1,6 +1,6 @@
 {
   "name": "chapbook-tweego-builder",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "A Twine/Twee project to use the Chapbook story format with Tweego compiler.",
   "author": {
     "name": "Marc-André Goyette",
@@ -21,7 +21,7 @@
     "storyPath": "src",
     "chapbookVersion": "1.0.0",
     "tweegoVersion": "2.1.0",
-    "poofVersion": "1.5.0"
+    "poofVersion": "1.6.0"
   },
   "scripts": {
     "switch": "./switch-story",
