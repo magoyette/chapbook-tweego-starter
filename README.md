@@ -2,7 +2,7 @@
 
 A project for the [Chapbook](https://github.com/klembot/chapbook) Twine/Twee story format Chapbook. It uses the compiler [Tweego](https://www.motoslave.net/tweego/) to build stories.
 
-**Features**
+## Features
 
 - Build [Chapbook](https://github.com/klembot/chapbook) stories with the [Tweego](https://www.motoslave.net/tweego/) compiler
 - Proof stories with the [Poof](https://github.com/ChapelR/poof) story format
@@ -12,37 +12,17 @@ A project for the [Chapbook](https://github.com/klembot/chapbook) Twine/Twee sto
 - Live reload in the browser when files are changed
 - Build many stories with a single Node project
 
-**Warning**
+## Warning
 
-This project is a work in progress and has only been tested on Linux. If you're not familiar with Node and Webpack, it might be better to take a look at [tweego-installer](https://github.com/ChapelR/tweego-installer) and [tweego-setup](https://github.com/ChapelR/tweego-setup).
+This project is a work in progress and is currently only compatible with Linux. If you're not familiar with Node and Webpack, it might be better to take a look at [tweego-installer](https://github.com/ChapelR/tweego-installer) and [tweego-setup](https://github.com/ChapelR/tweego-setup).
 
-**FAQ**
+I plan to eventually rewrite in JavaScript the Linux Bash scripts on which the project depends.
 
-Is there a reason why this project is specific to the Chapbook story format?
+## FAQ
 
-I only write Twine/Twee stories with Chapbook, so this project is only tested with Chapbook.
+Q: Is there a reason why this project is specific to the Chapbook story format?
 
-**Table of contents**
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-
-- [Installation](#installation)
-- [Build](#build)
-  - [Watching for changes with live reload](#watching-for-changes-with-live-reload)
-- [Proofing](#proofing)
-- [Working with multiple stories](#working-with-multiple-stories)
-  - [Switching between stories](#switching-between-stories)
-- [Tools](#tools)
-  - [Webpack](#webpack)
-  - [Babel](#babel)
-  - [ESLint](#eslint)
-  - [Node Sass](#node-sass)
-  - [Stylelint](#stylelint)
-  - [Autoprefixer](#autoprefixer)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+A: I only write Twine/Twee stories with Chapbook, so this project is only tested with Chapbook.
 
 ## Installation
 
@@ -179,8 +159,6 @@ JavaScript files are linted with [ESLint](https://eslint.org).
 ### Stylelint
 
 CSS, SASS and SCSS fiels are linted with Stylelint.
-
-The Stylelint plugin `stylelint-no-unsupported-browser-features` is used to support the `browserslist` in `package.json`.
 
 ### Autoprefixer
 
