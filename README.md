@@ -2,6 +2,8 @@
 
 A project for the [Chapbook](https://github.com/klembot/chapbook) Twine/Twee story format Chapbook. It uses the compiler [Tweego](https://www.motoslave.net/tweego/) to build stories.
 
+This project is now archived and no longer maintained.
+
 ## Features
 
 - Build [Chapbook](https://github.com/klembot/chapbook) stories with the [Tweego](https://www.motoslave.net/tweego/) compiler
